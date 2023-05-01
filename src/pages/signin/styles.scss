@@ -1,0 +1,62 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    
+    border: solid 1px transparent;
+    border-image: linear-gradient(to right, var(--green), var(--yellow), var(--red)) 1;
+    background-origin: border-box; // define a origem da imagem de fundo como a borda da div
+    background-clip: content-box; // define a área da div onde a imagem de fundo é exibida
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+
+    p {
+        color: var(--caption);
+    }
+
+    button {
+        height: 60px;
+        width: 500px;
+
+        background: none;
+        color: var(--text);
+        border-image: linear-gradient(to right, var(--primary), var(--gray), var(--yellow)) 1;
+
+        transition: background-color .3s;
+
+        &:hover {
+            background-color: var(--background-light);
+        }
+    }
+}
+
+.CardUser {
+
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+    padding: 10px;
+
+    border: solid 2px transparent;
+    border-image: linear-gradient(to right, var(--primary), var(--gray), var(--yellow)) 1;
+
+    img {
+        border-radius: 25px;
+    }
+    
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+}

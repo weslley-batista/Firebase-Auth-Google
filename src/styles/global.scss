@@ -1,0 +1,30 @@
+:root {
+    --primary: #2421ac;
+    --background: #121214;
+    --text: #FFF;
+    --caption: #8D8D99;
+    --gray: #E1E1E6;
+    --background-light: rgba(255, 255, 255, 0.05);
+    --yellow: rgb(218, 203, 70);
+    --green: rgb(115, 211, 102);
+    --red: rgb(173, 41, 41);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
